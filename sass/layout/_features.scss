@@ -1,26 +1,32 @@
 /* Секция преимущества*/
 
 .features{
+  margin: -15px; 
+
   @media screen and (min-width:480px) {
    display: block;
   }
   @media screen and (min-width:768px) {
-    display:flex;
-    flex-wrap: wrap;
-    margin: -15px;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap; 
   }
+  @media screen and (min-width:1140px) {
+    flex-wrap: nowrap;
+     
+}
 }
 .features__item {
+  margin: 15px;
+
   @media screen and (min-width:480px) {
     width: 100%;
-    &:not(:last-child){
-      margin: 15px; 
-    }
   }
   @media screen and (min-width:768px) {
-    width: calc((100%-2*30)/2);
-    margin: 15px;  
+    width: calc((100% - 2 * 30px) / 2);
+      
   }
+  @media screen and (min-width:1140px){}
 
   }
   
