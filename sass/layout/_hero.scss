@@ -1,10 +1,8 @@
 /* Секция Hero */
 .hero {
+  max-width: 1600px;
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -19,19 +17,19 @@
   @media screen and (min-width: 480px) {
     padding-top: 118px;
     padding-bottom: 118px;
-
+  }
+  @media screen and (min-width: 1140px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero__title {
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 
   color: var(--secondary-accent-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -39,5 +37,10 @@
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
+  }
+  @media screen and (min-width: 1140px){
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
