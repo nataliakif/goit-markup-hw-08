@@ -14,17 +14,14 @@
   @media screen and (min-width:480px) {
     width: 100%;
     &:not(:last-child){
-      margin-bottom: 30px;
+      margin: 15px; 
     }
   }
   @media screen and (min-width:768px) {
     width: calc((100%-2*30)/2);
     margin: 15px;  
   }
-  @media screen and (min-width:1140px) {
-    width: calc((100%-3*30)/3);
-   
-    }
+
   }
   
 
