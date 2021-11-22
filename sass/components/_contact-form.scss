@@ -62,12 +62,19 @@
 }
 .checkbox-label {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: var(--primary-text-color);
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   margin-bottom: 30px;
+  @media screen and (max-width:480px){
+    font-size: 9px;
+}
+  @media screen and (min-width:1140px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-link {
   margin-left: 5px;

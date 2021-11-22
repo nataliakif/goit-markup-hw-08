@@ -14,13 +14,19 @@
        <div class="container page-header__container ">
             <a href="index.html" class="logo page-header__logo"><span class="logo__span">Web</span>Studio</a>
             <nav class="main-nav">
-                <button type="button" class="main-nav__button is-open" area-expended="false" js-menu-container>
-                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use class="main-nav__burger" href="./images/symbol-defs.svg#icon-menu"></use>
-                        <use class="main-nav__cross" href="./images/symbol-defs.svg#icon-close-menu"></use>
-                    </svg>
+                <button 
+                type="button" 
+                class="menu-button"  
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="menu-button__burger" href="./images/symbol-defs.svg#icon-menu"></use>
+                    <use class="menu-button__cross" href="./images/symbol-defs.svg#icon-close-menu"></use>
+                </svg>
                 </button>
-                <ul class="main-nav__list">
+                <div class="menu-container" id="menu-container" data-menu>
+                 <ul class="main-nav__list">
                     <li class="main-nav__item">
                         <a href="index.html" class="main-nav__link main-nav__link--active">Студия</a> 
                 
@@ -32,7 +38,7 @@
                         <a href="contacts.html" class="main-nav__link">Контакты</a> 
                     </li>
                 </ul>          
-            </nav>
+            
             <ul class="header-contacts">
                 <li class="header-contacts__item">
                     <a href="mailto:info@devstudio.com" class="header-contacts__link"> 
@@ -51,6 +57,30 @@
                     </a>
                 </li>
             </ul>
+            <ul class="mobile-menu">
+                <li class="mobile-menu__item">
+                    <a href="tel:+380961111111" class="mobile-menu__item--phone">
+                    +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu__item--mail"> 
+                        
+                    info@devstudio.com
+                    </a>
+                </li>
+                <li class="mobile-menu__item--social">
+                            <a href="#" class="mobile-menu__social">Instagram</a>
+                            <a href="#" class="mobile-menu__social">Twitter</a>
+                            <a href="#" class="mobile-menu__social">Facebook</a>
+                            <a href="#" class="mobile-menu__social">Linkedin</a>
+                    </li>
+                    
+                </ul>
+            </ul>
+        </div>
+        </nav>
+        
        </div>
     </header>
 
@@ -98,7 +128,7 @@
                          </div>
                          <label class="checkbox-label">
                             <input class="checkbox" type="checkbox" name="agreement">
-                            <span class="checkbox-icon"></span>
+                            <span class="checkbox-icon" width="16px height="15px"></span>
                             Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a>
                         </label>
                               <button type="submit" class="site-button">Отправить</button>
@@ -363,7 +393,7 @@
         <div class="page-footer__container container">
         <div class="page-footer__left">
             <a href="index.html" class="logo page-footer__logo"><span class="logo__span">Web</span>Studio</a>
-            <address>
+            <address class="page-footer__address">
                 <ul class="page-footer__list">
                     <li class="page-footer__item">
                         <a href="https://goo.gl/maps/J4pYUuRFbCx2AoaY6" class="page-footer__link page-footer__link--address">Киев, пр-т Леси Украинки, 26</a>
@@ -418,6 +448,7 @@
         </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>  
     <script src="./js/modal.js"></script>  
 </body>
 </html>
