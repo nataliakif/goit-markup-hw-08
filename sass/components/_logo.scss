@@ -5,8 +5,13 @@
   line-height: 1.2;
 }
 .page-header__logo {
-  margin-right: 93px;
   color: var(--title-text-color);
+  @media screen and (min-width:768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 .page-footer__logo {
   display: inline-block;
