@@ -207,11 +207,9 @@ img {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 1139px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -330,7 +328,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: 90%;
   min-height: 609px;
   padding: 40px;
   border-radius: 4px;
@@ -340,6 +338,12 @@ img {
 
 .modal:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -542,12 +546,6 @@ img {
   }
 }
 
-.page-header__container .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 /* Навигация сайта */
 .page-header__button {
   background-color: transparent;
@@ -570,6 +568,11 @@ img {
 .page-header__icon {
   width: 40px;
   height: 40px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .main-nav__list {
@@ -634,8 +637,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .header-contacts {
-    display: inline-flex;
-    justify-content: flex-end;
+    display: flex;
     align-items: center;
     margin-left: auto;
     padding-top: 32px;
@@ -834,18 +836,18 @@ img {
 
 /* Секция About */
 .about {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .about {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .section__no-padding {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section__no-padding {
+    display: none;
+  }
 }
 
 .about__item {
@@ -1226,13 +1228,18 @@ img {
 
 .projects__item {
   max-width: 450px;
-  margin-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .projects__item {
+    margin-left: 15px;
+  }
 }
 
 .projects__item:not(:last-child) {
   margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {

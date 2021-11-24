@@ -1,12 +1,13 @@
 /* Секция About */
 .about{
-  display: none;
-  @media screen and (min-width:1200px) {
+  
     display: flex;
     align-items: center;
-  }
+  
 }
 .section__no-padding {
+  @media screen and (max-width:1199px) {
+  display: none;}
   padding-top: 0;
 }
 .about__item {
