@@ -32,9 +32,8 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .box {
-        background-image: url(../images/hero/hero-tablet@2x.jpg);
-      }
+     
+        background-image: url(../images/hero/hero-tablet@2x.jpg); 
     }
   }
   @media screen and (min-width: 769px) {
@@ -49,9 +48,8 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .box {
         background-image: url(../images/hero/hero-desctop@2x.jpg);
-      }
+      
     }
   } 
 }
