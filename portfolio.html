@@ -14,6 +14,7 @@
         <div class="container page-header__container ">
              <a href="index.html" class="logo page-header__logo"><span class="logo__span">Web</span>Studio</a>
              <nav class="main-nav">
+                 
                   <ul class="main-nav__list">
                      <li class="main-nav__item">
                          <a href="index.html" class="main-nav__link">Студия</a> 
@@ -26,7 +27,7 @@
                          <a href="contacts.html" class="main-nav__link">Контакты</a> 
                      </li>
                  </ul>          
-             
+             </nav>
              <ul class="header-contacts">
                  <li class="header-contacts__item">
                      <a href="mailto:info@devstudio.com" class="header-contacts__link"> 
@@ -45,7 +46,8 @@
                      </a>
                  </li>
              </ul>
-         </nav>
+         
+        
          <button type="button" class="page-header__button" data-menu-open >
                  <svg class="page-header__icon">
                      <use href="./images/symbol-defs.svg#icon-menu"></use>        
@@ -55,18 +57,18 @@
                  <div class="mobile-menu" data-menu>
                      <button type="button" class="mobile-menu__button" data-menu-close>
                          <svg class="mobile-menu__icon">
-                             <use href="./images/symbol-defs.svg#icon-close-menu"></use>        
+                             <use class="mobile-menu__close" href="./images/symbol-defs.svg#icon-close-menu"></use>        
                          </svg>
                          </button>
-                        <div class="mobile-menu__container" >
+                        <div class="mobile-menu__container">
                             
                      <ul class="mobile-menu__list">
                              <li class="mobile-menu__item">
-                                 <a href="index.html" class="mobile-menu__link">Студия</a> 
+                                 <a href="index.html" class="mobile-menu__link mobile-menu__link--active">Студия</a> 
                          
                              </li>
                              <li class="mobile-menu__item">
-                                 <a href="portfolio.html" class="mobile-menu__link mobile-menu__link--active">Портфолио</a> 
+                                 <a href="portfolio.html" class="mobile-menu__link">Портфолио</a> 
                              </li>
                              <li class="mobile-menu__item">
                                  <a href="contacts.html" class="mobile-menu__link">Контакты</a> 
@@ -99,6 +101,7 @@
          
              </div>
      </header>
+ 
  
     <!--Main content-->
     <main>
