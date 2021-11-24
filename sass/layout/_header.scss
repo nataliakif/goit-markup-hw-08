@@ -40,10 +40,7 @@
   width: 40px;
   height: 40px;
 }
-.main-nav{
-  display: flex;
-  align-items: center;
-}
+
 .main-nav__list {
   display: none;
   @media screen and (min-width: 768px) {
