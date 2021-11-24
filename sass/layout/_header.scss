@@ -90,17 +90,12 @@
   
     @media screen and (min-width:768px){
      display: block;
-     margin-left: auto;
-     padding-top: 21px;
-     padding-bottom: 21px;    
+     margin-left: auto;  
     }
     @media screen and (min-width:1200px){
         display: flex;
         align-items: center;
-        margin-left: auto;
-        padding-top: 32px;
-        padding-bottom: 32px;
-       
+        margin-left: auto;    
       }
 }
 .header-contacts__item {

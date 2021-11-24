@@ -630,8 +630,6 @@ img {
   .header-contacts {
     display: block;
     margin-left: auto;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
@@ -640,8 +638,6 @@ img {
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
