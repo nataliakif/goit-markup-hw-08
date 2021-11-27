@@ -21,19 +21,25 @@
  }
 }
 .page-footer__center{
-  margin-bottom: 60px;
-  
+  @media screen and (max-width:768px){
+    margin-top: 60px;
+  }
   @media screen and (min-width:1200px){
   margin-right: 93px;
   margin-bottom: 0;
   }
 }
 .page-footer__left {
-  margin-bottom: 60px;
+
   @media screen and (min-width:1200px){
   flex-grow: 1;
   margin-right: 70px;
 }
+}
+.page-footer__right{
+  @media screen and (max-width:1199px){
+    margin-top: 60px;
+  }
 }
 
 .page-footer__item:not(:first-child) {

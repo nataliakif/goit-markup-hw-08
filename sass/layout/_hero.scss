@@ -5,11 +5,11 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    );
-  background-image: url(../images/hero/hero-mobile.jpg);
+  background-image:linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+   url(../images/hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,36 +18,53 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image:
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
       url(../images/hero/hero-mobile@2x.jpg); 
   }
   @media screen and (min-width: 481px) {
     max-width: 768px;
-    background-image: 
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero/hero-tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
      
-        background-image:
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
         url(../images/hero/hero-tablet@2x.jpg); 
     }
   }
   @media screen and (min-width: 769px) {
     max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: 
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero/hero-desctop.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: 
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
         url(../images/hero/hero-desctop@2x.jpg);
       
     }
   } 
+  @media screen and (min-width: 1200px) {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -57,7 +74,8 @@
 
   color: var(--secondary-accent-color);
   font-weight: 900;
-  letter-spacing: 0.06em;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   width: 360px;
   font-size: 26px;
